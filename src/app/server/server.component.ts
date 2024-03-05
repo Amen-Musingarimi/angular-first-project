@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
 
-@Component({})
+@Component({
+  selector: 'server-root',
+  templateUrl: './server.component.html'
+})
 export class ServerComponent {}
