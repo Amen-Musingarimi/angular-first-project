@@ -31,4 +31,10 @@ export class ServersComponent implements OnInit {
   onUpdateUserName(event: any) {
     this.userName = (<HTMLInputElement>event.target).value;
   }
+
+  resertUserName() {
+    if (this.userName.length > 0) {
+      this.userName = '';
+    }
+  }
 }

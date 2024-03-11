@@ -12,7 +12,14 @@
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
-
+<hr />
 <label>User Name</label>
 <input type="text" class="form-control" [(ngModel)]="userName" />
 <p>{{ userName }}</p>
+<button
+  class="btn btn-danger"
+  [disabled]="userName.trim() === ''"
+  (click)="resertUserName()"
+>
+  Resert UserName
+</button>
